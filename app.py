@@ -21,10 +21,10 @@ for file in report_files:
     merged= merged.append(df,ignore_index = True)
 
 # export to excel 
-merged.to_excel('Sales_Q2020.xlsx', index = False, sheet_name='Quarter Sales Report')
+merged.to_excel('result/Sales_Q2021.xlsx', index = False, sheet_name='Quarter Sales Report')
 
 # Create Bar Chart
 barChart = px.bar(merged, x='Month_Name', y='Sales', title='Quarter Sales Report')
 
 #Save Bar Chart and Export to HTML
-plotly.offline.plot(barChart , filename='Sales_Q_2021.html')
+plotly.offline.plot(barChart , filename='result/Sales_Q_2021.html')
