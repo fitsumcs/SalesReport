@@ -17,6 +17,7 @@ for file in report_files:
     df['Day'] = pd.DatetimeIndex(df['Date']).day
     df['Month'] = pd.DatetimeIndex(df['Date']).month
     df['Year'] = pd.DatetimeIndex(df['Date']).year
+    df['Month_Name'] = df['Month'].apply(lambda x: calendar.month_abbr[x])
     merged= merged.append(df,ignore_index = True)
 
 # export to excel 
