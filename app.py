@@ -13,6 +13,10 @@ merged = pd.DataFrame()
 # The Loop for merging 
 for file in report_files:
     df = pd.read_excel(file)
+    df['Date'] = df['Date'].dt.date
+    df['Day'] = pd.DatetimeIndex(df['Date']).day
+    df['Month'] = pd.DatetimeIndex(df['Date']).month
+    df['Year'] = pd.DatetimeIndex(df['Date']).year
     merged= merged.append(df,ignore_index = True)
 
 # export to excel 
