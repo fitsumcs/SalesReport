@@ -1,2 +1,2 @@
 # SalesReport
-A quarter report 
+A quarter sales report 
