@@ -5,7 +5,7 @@ import plotly
 import plotly.express as px
 
 #Files list 
-report_files = ['Jan.xlsx', 'Feb.xlsx', 'Mar.xlsx']
+report_files = ['data/Jan.xlsx', 'data/Feb.xlsx', 'data/Mar.xlsx']
 
 # Merged 
 merged = pd.DataFrame()
