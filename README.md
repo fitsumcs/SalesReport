@@ -6,7 +6,6 @@ A quarter sales report
 
 
 ## Used Python Packages  : 
-*  streamlit 
 *  plotly       
 *  pandas  
 * datetime and calendar
