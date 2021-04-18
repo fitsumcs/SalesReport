@@ -24,7 +24,7 @@ for file in report_files:
 merged.to_excel('result/Sales_Q2021.xlsx', index = False, sheet_name='Quarter Sales Report')
 
 # Create Bar Chart
-barChart = px.bar(merged, x='Month_Name', y='Sales', title='Quarter Sales Report')
+barChart = px.bar(merged, x='Month_Name', y='Sales', title='Quarter Sales Report',color_discrete_sequence=['#F63366'],template='plotly_dark')
 
 #Save Bar Chart and Export to HTML
 plotly.offline.plot(barChart , filename='result/Sales_Q_2021.html')
